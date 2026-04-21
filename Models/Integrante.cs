@@ -16,4 +16,9 @@ public class Integrante
         this.Familiares = Familiares;
         this.interese = intereses;
     }
+
+    public int getDni():
+    {
+        return dni;
+    }
 }

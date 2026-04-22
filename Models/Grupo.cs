@@ -14,7 +14,9 @@ public class Grupo
         int1.Add("Jugar a la play");
         int1.Add("Ver independiente");
 
-        Integrante I1 = new Integrante(49700741, "Agustin Slonimsky", new DateTime(2009, 8, 9), ".", fam1, int1); 
+        Integrante I1 = new Integrante(49700741, "Agustin Slonimsky", new DateTime(2009, 23, 8), ".", fam1, int1); 
+
+        integrantes.Add(I1);
 
         list<string> fam2 = new list<string>();
         fam2.Add("Gustavo");
@@ -28,6 +30,8 @@ public class Grupo
         int2.Add("Ver River");
 
         Integrante I2 = new Integrante(49551586, "Tomas Cheskis", new DateTime(2009, 10, 8), ".", fam2, int2);   
+
+        integrantes.Add(I2);
     }
     public dictionary<int, Integrante> devolverIntegrantes()
     {

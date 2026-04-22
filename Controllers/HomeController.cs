@@ -31,11 +31,11 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-    public IActionResult SelectIntegrante()
+    public IActionResult SelectIntegrante(int dni)
     {
         Grupo g = new Grupo();
         ViewBag.id = dni;       
         ViewBag.I = g.getIntegante(dni);
-        return infoIntegrante;
+        return View("infoIntegrante");
     }
 }

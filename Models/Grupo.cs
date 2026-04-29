@@ -38,7 +38,7 @@ public class Grupo
         int2.Add("Macabi");
         int2.Add("River");
 
-        Integrante i2 = new Integrante(49551586,"Tomas   Cheskis",new DateTime(2009, 10, 8),"/img/Toto.jpg",fam2,int2);
+        Integrante i2 = new Integrante(49551586,"Tomas Cheskis",new DateTime(2009, 10, 8),"/img/Toto.jpg",fam2,int2);
 
         integrantes.Add(i1.dni, i1);
         integrantes.Add(i2.dni, i2);

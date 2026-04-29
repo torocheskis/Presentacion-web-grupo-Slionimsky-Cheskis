@@ -94,4 +94,4 @@ Z:\AÑO2026\PROGRAMACION\TPpresentacionWeb\obj\Debug\net9.0\refint\TPpresentacio
 Z:\AÑO2026\PROGRAMACION\TPpresentacionWeb\obj\Debug\net9.0\TPpresentacionWeb.pdb
 Z:\AÑO2026\PROGRAMACION\TPpresentacionWeb\obj\Debug\net9.0\TPpresentacionWeb.genruntimeconfig.cache
 Z:\AÑO2026\PROGRAMACION\TPpresentacionWeb\obj\Debug\net9.0\ref\TPpresentacionWeb.dll
-Z:\AÑO2026\PROGRAMACION\TPpresentacionWeb\obj\Debug\net9.0\compressed\isktqis648-x8xjt5j0ug.gz
+Z:\AÑO2026\PROGRAMACION\TPpresentacionWeb\obj\Debug\net9.0\compressed\isktqis648-kxw5tiuvwf.gz

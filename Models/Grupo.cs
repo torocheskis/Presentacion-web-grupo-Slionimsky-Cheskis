@@ -1,50 +1,61 @@
+using System;
+using System.Collections.Generic;
+
+namespace TPpresentacionWeb.Models;
+
 public class Grupo
 {
-    private dictionary<int, Integrante> integrantes = new dictionary<int, Integrante>();
+    private Dictionary<int, Integrante> integrantes = new Dictionary<int, Integrante>();
+
+    public Grupo()
+    {
+        cargarDatosManuales();
+    }
 
     public void cargarDatosManuales()
     {
-        list<string> fam1 = new list<string>();
-        fam1.Add("Damian");
-        fam1.Add("Laura");
-        fam1.Add("Emi");
+        List<string> fam1 = new List<string>();
+        fam1.Add("Papa: Damian");
+        fam1.Add("Mama: Laura");
+        fam1.Add("Hermano: Emiliano");
 
-        list<string> int1 = new list<string>();
-        int1.Add("Jugar al futbol");
-        int1.Add("Jugar a la play");
-        int1.Add("Ver independiente");
+        List<string> int1 = new List<string>();
+        int1.Add("Futbol");
+        int1.Add("Cissab");
+        int1.Add("Play");
+        int1.Add("Independiente");
 
-        Integrante I1 = new Integrante(49700741, "Agustin Slonimsky", new DateTime(2009, 23, 8), ".", fam1, int1); 
+        Integrante i1 = new Integrante(49700741,"Agustin Slonimsky",new DateTime(2009, 8, 23),"/img/Agus.jpg",fam1,int1);
 
-        integrantes.Add(I1);
+        List<string> fam2 = new List<string>();
+        fam2.Add("Papa: Gustavo");
+        fam2.Add("Mama: Natalia");
+        fam2.Add("Hermana: Valentina");
+        fam2.Add("Hermana: Lucila");
 
-        list<string> fam2 = new list<string>();
-        fam2.Add("Gustavo");
-        fam2.Add("Natalia");
-        fam2.Add("Valentina");
-        fam2.Add("Lucila");
+        List<string> int2 = new List<string>();
+        int2.Add("Futbol");
+        int2.Add("Macabi");
+        int2.Add("River");
 
-        list<string> int2 = new list<string>();
-        int2.Add("Jugar al futbol");
-        int2.Add("Ir a macabi");
-        int2.Add("Ver River");
+        Integrante i2 = new Integrante(49551586,"Tomas   Cheskis",new DateTime(2009, 10, 8),"/img/Toto.jpg",fam2,int2);
 
-        Integrante I2 = new Integrante(49551586, "Tomas Cheskis", new DateTime(2009, 10, 8), ".", fam2, int2);   
-
-        integrantes.Add(I2);
+        integrantes.Add(i1.dni, i1);
+        integrantes.Add(i2.dni, i2);
     }
-    public dictionary<int, Integrante> devolverIntegrantes()
+
+    public Dictionary<int, Integrante> devolverIntegrantes()
     {
         return integrantes;
     }
-    public Integrante getIntegante(int dni)
-    {
-        Integrante N = null;
-        if(integrantes.ContainsKey(dni))
-        {
-            N = integrantes[dni];
-        }
-        return N;
-    }
 
+    public Integrante getIntegrante(int dni)
+    {
+        if (integrantes.ContainsKey(dni))
+        {
+            return integrantes[dni];
+        }
+
+        return null;
+    }
 }

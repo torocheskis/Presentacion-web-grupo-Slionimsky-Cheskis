@@ -1,31 +1,73 @@
-html {
-  font-size: 14px;
+body{
+    background-color:#ecdc82;
+    font-family:Arial;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.titulo{
+    text-align:center;
+    margin-top:30px;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.titulo h1{
+    font-size:45px;
+    color:#222;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.titulo p{
+    color:gray;
 }
 
-body {
-  margin-bottom: 60px;
+.contenedor{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:50px;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.tarjeta{
+    background-color:rgb(250, 249, 247);
+    width:280px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.foto{
+    width:180px;
+    height:180px;
+    border-radius:100%;
+    object-fit:cover;
+}
+
+.tarjeta h2{
+    margin-top:15px;
+}
+
+.tarjeta a,
+.perfil a{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background-color:#222;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.perfil{
+    width:500px;
+    margin:auto;
+    margin-top:40px;
+    background-color:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.fotoGrande{
+    width:220px;
+    border-radius:100%;
+    display:block;
+    margin:auto;
 }

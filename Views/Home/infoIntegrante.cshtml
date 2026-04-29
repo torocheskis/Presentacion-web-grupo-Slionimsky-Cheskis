@@ -1,0 +1,35 @@
+@using TPpresentacionWeb.Models
+@{
+    Integrante i = ViewBag.i;
+}
+
+<div class="perfil">
+
+    <img src="@i.foto" class="fotoGrande">
+
+    <h1>@i.nombre</h1>
+
+    <p>DNI: @i.dni</p>
+    <p>Fecha Nacimiento: @i.fechaNacimiento.ToShortDateString()</p>
+
+    <h2>Familiares</h2>
+
+    <ul>
+        @foreach(string f in i.familiares)
+        {
+            <li>@f</li>
+        }
+    </ul>
+
+    <h2>Intereses</h2>
+
+    <ul>
+        @foreach(string x in i.intereses)
+        {
+            <li>@x</li>
+        }
+    </ul>
+
+    <a href='@Url.Action("Index","Home")'>Volver</a>
+
+</div>

@@ -1,7 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using TPpresentacionWeb.Models
+@{
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="A">
-    
+<div class="El Dream Team">
+    <h1>Grupo Programación</h1>
+    <p>Presentación de Integrantes</p>
+</div>
+
+<div class="contenedor">
+
+@foreach(KeyValuePair<int, Integrante> item in ViewBag.g)
+{
+    <div class="tarjeta">
+
+        <img src="@item.Value.foto" class="foto">
+
+        <h2>@item.Value.nombre</h2>
+
+        <a href='@Url.Action("SelectIntegrante","Home", new { dni = item.Value.dni })'>
+            Ver Perfil
+        </a>
+
+    </div>
+}
+
 </div>

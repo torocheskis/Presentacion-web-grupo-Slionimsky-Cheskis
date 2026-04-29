@@ -4,20 +4,20 @@ public class Integrante
     public string nombre;
     public DateTime fechaNacimiento;
     public string foto;
-    list<string> Familiares;
-    list<string> intereses;
+    public List<string> familiares;
+    public List<string> intereses;
 
-    public Integrante(int dni, string nombre, DateTime fechaNacimiento, string foto, list<string> Familiares, list<string> intereses)
+    public Integrante(int dni, string nombre, DateTime fechaNacimiento, string foto, List<string> familiares, List<string> intereses)
     {
         this.dni = dni;
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.foto = foto;
-        this.Familiares = Familiares;
-        this.interese = intereses;
+        this.familiares = familiares;
+        this.intereses = intereses;
     }
 
-    public int getDni():
+    public int getDni()
     {
         return dni;
     }

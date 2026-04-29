@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        Grupo g = new Grupo();
+        Grupo grupo = new Grupo();
         ViewBag.g = grupo.devolverIntegrantes();
         return View();
     }
@@ -35,7 +35,7 @@ public class HomeController : Controller
     {
         Grupo g = new Grupo();
         ViewBag.id = dni;       
-        ViewBag.I = g.getIntegante(dni);
+        ViewBag.I = g.getIntegrante(dni);
         return View("infoIntegrante");
     }
 }
